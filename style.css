@@ -1,0 +1,71 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #121212; /* Dark background for dark mode */
+  color: #f1f1f1;
+  transition: background-color 0.5s ease, color 0.5s ease;
+  text-align: center;
+}
+
+.container {
+  width: 90%;
+  max-width: 600px;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #ffd700; /* Gato Negro's accent color */
+  margin-bottom: 20px;
+  opacity: 1;
+  transition: opacity 0.5s ease, color 0.5s ease;
+}
+
+p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+button {
+  padding: 15px 30px;
+  font-size: 18px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+button i {
+  font-size: 1.5rem; /* Adjust icon size */
+}
+
+button:hover {
+  transform: scale(1.1);
+}
+
+body.light-mode {
+  background-color: #f1f1f1; /* Light background for light mode */
+  color: #333;
+}
+
+body.light-mode button {
+  background-color: #333;
+}
+
+body.light-mode h1 {
+  color: #4CAF50;
+}
+
+body.light-mode h1 {
+  opacity: 0; /* Start invisible to allow fade-in */
+}
